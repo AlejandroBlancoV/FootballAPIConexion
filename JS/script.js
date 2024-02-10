@@ -99,7 +99,7 @@ async function fetchData(teamName) {
         if (!response.ok) {
           throw new Error('Error al obtener los datos');
         }
-        return response.json(); // Analizar la respuesta como JSON
+        return response.json(); 
       })
       .catch(error => {
         throw new Error('Hubo un problema con la solicitud fetch:', error);
